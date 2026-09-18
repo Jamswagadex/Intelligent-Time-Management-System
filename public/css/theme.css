@@ -1,0 +1,68 @@
+/* ============ Material 3-inspired design tokens ============ */
+:root {
+  --primary: #1A2A5A;
+  --primary-container: #E3E8F5;
+  --secondary: #3D5A80;
+  --accent: #4A7CFF;
+  --surface: #FFFFFF;
+  --surface-2: #F5F7FA;
+  --surface-3: #EEF1F6;
+  --on-surface: #1B1C1E;
+  --on-surface-variant: #555B66;
+  --outline: #D5DAE3;
+
+  --critical: #C62828;
+  --high: #EF6C00;
+  --medium: #F9A825;
+  --low: #2E7D32;
+  --overdue: #B00020;
+
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+
+  --space-1: 4px;  --space-2: 8px;  --space-3: 12px;
+  --space-4: 16px; --space-5: 20px; --space-6: 24px;
+
+  --shadow-1: 0 1px 3px rgba(0,0,0,.08);
+  --shadow-2: 0 2px 8px rgba(0,0,0,.10);
+  --shadow-3: 0 6px 20px rgba(0,0,0,.12);
+}
+
+[data-theme="dark"] {
+  --primary: #A8C0FF;
+  --primary-container: #243260;
+  --secondary: #9FB4D9;
+  --accent: #7CA0FF;
+  --surface: #121212;
+  --surface-2: #1B1B1D;
+  --surface-3: #232326;
+  --on-surface: #E8E9EB;
+  --on-surface-variant: #A7ABB5;
+  --outline: #33363C;
+  --shadow-1: 0 1px 3px rgba(0,0,0,.5);
+  --shadow-2: 0 2px 8px rgba(0,0,0,.6);
+  --shadow-3: 0 6px 20px rgba(0,0,0,.7);
+}
+
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body {
+  font-family: 'Segoe UI', Roboto, system-ui, -apple-system, sans-serif;
+  background: var(--surface-2);
+  color: var(--on-surface);
+  font-size: 15px;
+  line-height: 1.5;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4 { margin: 0; font-weight: 600; color: var(--on-surface); }
+h1 { font-size: 26px; }
+h2 { font-size: 20px; }
+h3 { font-size: 17px; }
+p  { margin: 0; color: var(--on-surface-variant); }
+
+button { font-family: inherit; cursor: pointer; border: none; background: none; }
+input, select, textarea { font-family: inherit; font-size: 15px; }

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#1A2A5A" />
+  <title>Intelligent Time Management System</title>
+  <link rel="manifest" href="/manifest.json" />
+  <link rel="stylesheet" href="/css/theme.css" />
+  <link rel="stylesheet" href="/css/components.css" />
+  <link rel="stylesheet" href="/css/screens.css" />
+</head>
+<body>
+  <div id="app">
+    <header id="topbar" class="topbar hidden"></header>
+    <main id="view" class="view"></main>
+    <nav id="bottomnav" class="bottom-nav hidden"></nav>
+  </div>
+  <div id="toast" class="toast hidden"></div>
+  <div id="modal" class="modal-overlay hidden"></div>
+
+  <!-- 1. Utilities and infrastructure (load first) -->
+  <script src="/js/utils.js"></script>
+  <script src="/js/api.js"></script>
+  <script src="/js/store.js"></script>
+  <script src="/js/notifications.js"></script>
+
+  <!-- 2. Router MUST come before any screen that calls Router.register() -->
+  <script src="/js/router.js"></script>
+
+  <!-- 3. Screens (each one calls Router.register) -->
+  <script src="/js/screens/splash.js"></script>
+  <script src="/js/screens/welcome.js"></script>
+  <script src="/js/screens/login.js"></script>
+  <script src="/js/screens/register.js"></script>
+  <script src="/js/screens/forgotPassword.js"></script>
+  <script src="/js/screens/dashboard.js"></script>
+  <script src="/js/screens/tasks.js"></script>
+  <script src="/js/screens/taskForm.js"></script>
+  <script src="/js/screens/matrix.js"></script>
+  <script src="/js/screens/calendar.js"></script>
+  <script src="/js/screens/stats.js"></script>
+  <script src="/js/screens/profile.js"></script>
+  <script src="/js/screens/settings.js"></script>
+</body>
+</html>

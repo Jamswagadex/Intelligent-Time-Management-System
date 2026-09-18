@@ -1,0 +1,9 @@
+{
+  "name": "Intelligent Time Management System",
+  "short_name": "ITMS",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#1A2A5A",
+  "theme_color": "#1A2A5A",
+  "icons": []
+}
